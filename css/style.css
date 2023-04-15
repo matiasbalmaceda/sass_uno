@@ -1,0 +1,26 @@
+header {
+  background-color: black; }
+  header ul {
+    display: flex;
+    justify-content: center; }
+    header ul li {
+      list-style: none; }
+      header ul li a {
+        text-decoration: none;
+        color: #09f509;
+        font-weight: bold;
+        font-family: sans-serif;
+        padding: 2px; }
+
+main {
+  background-color: black;
+  padding: 5px;
+  margin: 10px; }
+  main h1 {
+    font-family: sans-serif;
+    color: #09f509; }
+
+footer {
+  background-color: black;
+  padding: 5px;
+  color: #09f509; }
