@@ -1,0 +1,17 @@
+
+header{
+    background-color: $background-color-principal;
+    ul{
+        @include flex(row,right,right);
+        li{
+            list-style: none;
+            a{
+                text-decoration: none;
+                color: $font-color-principal;
+                font-weight: bold;
+                font-family: sans-serif;
+                padding: 2px;
+            }
+        }
+    };
+}

@@ -1,0 +1,7 @@
+main{
+    @include flex(row,none,none);
+    h1{
+        font-family: sans-serif;
+        color: $font-color-principal;
+    }    
+}

@@ -1,37 +1,12 @@
-$font-color-principal: rgb(9, 245, 9);
-$font-color-secundario: yellow;
-$background-color-principal: black;
+@import "utilities/variables";
+@import "utilities/mixins";
+@import "utilities/function";
+@import "base/reset";
+@import "layout/header";
+@import "layout/main";
+@import "layout/footer";
 
-header{
-    background-color: $background-color-principal;
-    ul{
-        display: flex;
-        justify-content: center;
-        li{
-            list-style: none;
-            a{
-                text-decoration: none;
-                color: $font-color-principal;
-                font-weight: bold;
-                font-family: sans-serif;
-                padding: 2px;
-            }
-        }
-    };
-}
 
-main{
-    background-color: $background-color-principal;
-    padding: 5px;
-    margin: 10px;
-    h1{
-        font-family: sans-serif;
-        color: $font-color-principal;
-    }    
-}
-
-footer{
-    background-color: $background-color-principal;
-    padding: 5px;
-    color: $font-color-principal;
-}
+/* media-querry */
+@import "layout/media/media-768";
+@import "layout/media/media-320";
