@@ -1,0 +1,46 @@
+.imagenFondo {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &__subtitulo {
+            background-color: rgba($color: $colBlanco, $alpha: 0.7);
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            &:hover {
+                    background-color: rgba($color: $colBlanco, $alpha: 0.8);
+            }
+            & p {
+                    width: 80%;
+            }
+            
+    }
+}
+
+.quote h3::before, .quote h3::after {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+   position: absolute;
+   color: $colGrisClaro;
+   font-size: $fontXL*2;
+   line-height: 0;
+}
+.quote h3::before {
+  content: "“";
+  left: -50px;
+  top: 70px;
+  float: left;
+}
+.quote h3::after {
+   content: "”";
+   right: -50px;
+   bottom: 15px;
+   float: left;
+}

@@ -1,0 +1,88 @@
+@media only screen and (max-width: 600px) {
+    .proyectoGrande__titulo {
+        font-size: $fontM;
+    }
+    .proyectoGrande__texto {
+        position: absolute;
+        display: none;
+    }
+    .proyectoGrande__imagen {
+        max-height: 60vh;
+        align-self: center;
+    }
+    .carousel {
+        display: none;
+    }
+    .links {
+        display: flex;
+        flex-direction: column;
+        &__anchor {
+            height: 3rem;
+            &.anchor1 {
+                width: 100%;
+            }
+            &.anchor2 {
+                width: 100%;
+            }
+
+        }
+    }
+
+  }
+
+.proyectoGrande {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &__titulo {
+        margin-top: 2rem;
+    }
+    &__imagen {
+        max-height: 70%;
+        align-self: center;
+    }
+}
+
+.carousel {
+    width: 100%;
+    &-item img {
+        max-height: 70vh;
+    }
+    &-item .carousel-caption {
+        background-color: rgba($color: $colBlanco, $alpha: 0.6);
+        color: $colNegro;
+        & h5 {
+            font-size: $fontM;
+        }
+        & p {
+            font-weight: $weightM;
+        }
+    }    
+}
+.links {
+    display: flex;
+    justify-content: space-around;
+    &__anchor {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        color: $colBlanco;
+        width: 50%;
+        height: 4rem;
+        &.anchor1 {
+            background-color: $colAzulMedio;
+        }
+        &.anchor2 {
+            background-color: $colAtencion;
+        }
+        &:hover {
+            color: white;
+            font-size: $fontS*1.01;
+            font-weight: $weightL;
+        }
+    }
+
+    
+
+}

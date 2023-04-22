@@ -1,0 +1,45 @@
+/* Header */
+
+.fondo {
+    background-image:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.5)), url("../images/background-header-purpleball.jpg") ;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    padding: 20vw 0 ;
+    height: 97vh;
+  }
+  
+  .banner {
+      position: relative;
+      top: 40%;
+      &__titulo {
+          font-family: 'Poppins', sans-serif;
+          background: $colBlanco;
+          mix-blend-mode: screen;
+          padding: 0 0 0 20px;
+          line-height: 68%;
+          width: 100%;
+          color: $colNegro;
+          font-weight: $weightS;
+       }
+      &__subtitulo p {
+          font-size: $fontM;
+          color: $colBlanco;
+          font-weight: $weightS;
+          opacity: .8;
+          text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+          margin-top: 10px;
+        }
+        &__subtitulo b {
+          font-weight: $weightXL;
+        }
+        &__subtitulo a {
+            font-size: $fontL;
+            color: $colBlanco;
+        }
+  }
+  @media screen and (max-width: 820px){
+      .banner__titulo {
+          line-height: 100%;
+      }
+  }

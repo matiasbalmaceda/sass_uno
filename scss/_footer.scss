@@ -1,0 +1,31 @@
+/* Footer */
+
+.footer {
+    background-color: $colAzulOscuro;
+    height: auto; 
+    &__listado {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        margin: 0;
+    }
+    &__listado &__icono {
+        color: $colBlanco;
+        font-size: $fontM;
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+        opacity: 0.5;
+        margin: 0 2rem;
+        &:hover {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+    &__titulo {
+        font-size: $fontS;
+        color: $colBlanco;
+        opacity: 0.5;
+        display: flex;
+        justify-content: center;
+    }
+}

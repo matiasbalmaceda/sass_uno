@@ -1,0 +1,17 @@
+.boton {
+    display: block;
+    text-align: center;
+    font-size: $fontM*0.7;
+    color: $colBlanco;
+    background-color: $colAzulMedio;
+    transition: 1s;
+    border: 2px solid;
+    width: 30vw;
+    margin: auto;
+}
+.boton:hover {
+    border: 2px solid $colBlanco;
+    color: $colNegro;
+    transform: scale(1.0);
+    background-color: $colBlanco;
+}

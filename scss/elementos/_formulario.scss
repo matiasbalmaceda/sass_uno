@@ -1,0 +1,91 @@
+@media only screen and (max-width: 500px) {
+    #formulario {
+        display: grid;
+        grid-template-columns: 5fr;
+        grid-template-rows: 3rem 3rem 3rem 3rem 3rem 3rem 3rem;
+        grid-template-areas: "lNombre"
+                             "iNombre"
+                             "lOng "
+                             "iOng"  
+                             "lEmail"
+                             "iEmail"
+                             "bSubmit"
+                             "bSubmit"
+                             ;
+        justify-content: center;
+        margin: 3rem;
+        padding: 1rem;
+    }
+  }
+  @media only screen and (min-width: 500px) { 
+      #formulario {
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+        grid-template-rows: 4rem 4rem 4rem 4rem;
+        grid-template-areas: "lNombre iNombre"
+                               "lOng iOng"  
+                               "lEmail iEmail"
+                               "bSubmit bSubmit";
+        margin: 5rem;
+        padding: 3rem;
+      }
+  }
+
+
+#label1 {
+    grid-area: lNombre;
+}
+#label2 {
+    grid-area: lOng;
+}
+#label3 {
+    grid-area: lEmail;
+}
+#input1 {
+    grid-area: iNombre;
+}
+#input2 {
+    grid-area: iOng;
+}
+#input3 {
+    grid-area: iEmail;
+}
+#botonSubmit {
+    margin: 0;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    grid-area: bSubmit;
+    height: 2rem;
+    font-size: $fontS;
+    color: $colBlanco;
+    background-color: $colAzulMedio;
+    transition: 0.5s;
+    margin-top: 1.5rem;
+    border: 0;
+    width: 50%;
+}
+#botonSubmit:hover {
+    font-weight: $weightM;
+    background-color: $colAzulOscuro;
+    box-shadow: $sombra2;
+}
+
+.formulario {
+    background-color: $colAzulClaro;
+}
+
+.formulario-label {
+    font-size: $fontS;
+    margin: 0 10px;
+}
+.formulario-input {
+    height: 2rem;
+    border-width: 0px;
+    box-shadow: $sombra1;
+    padding: 5px 5px 5px 15px;
+    border-radius: 5px;
+}

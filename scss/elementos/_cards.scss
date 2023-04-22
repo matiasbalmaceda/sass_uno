@@ -1,0 +1,55 @@
+@media only screen and (max-width: 800px) {
+    .proyecto__texto {
+        display: none;
+    }
+  }
+
+.card {
+    border: 0px;
+    background-color: rgba($color: $colNegro, $alpha: 0);
+    
+    .proyecto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: $colBlanco;
+        box-shadow: $sombra3;
+        opacity: 0.8;
+        transition: 0.5s;
+
+        &__titulo {
+            padding: 0px 20px;
+            height: 4rem;
+        }
+        &__texto {
+            padding: 0px 20px;
+            height: 9rem;
+        }
+        &__boton {
+            width: 100%;
+            background-color: $colAtencion;
+            font-weight: $weightXL;
+            color: $colBlanco;
+            border-radius: 0px;
+            border-width: 0px;
+            opacity: 0;
+            transition: 0.3s ease-in-out;
+            margin-top: 1rem;
+        }
+        &__boton:hover p {
+            transform: scale(1.1);   
+            color: $colNegro;
+        }
+        &__link {
+            color: $colBlanco;
+        }
+        &:hover {
+            opacity: 1;
+            box-shadow: $sombra3;
+            transform: scale(1.01);
+            button {
+                opacity: 1;
+            }
+        }
+    }
+}

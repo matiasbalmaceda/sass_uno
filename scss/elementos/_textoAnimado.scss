@@ -1,0 +1,28 @@
+.texto-animado {
+	display: flex;
+	justify-content: center;
+	overflow: hidden;
+}
+
+.texto-animado > div {
+	display: flex;
+	flex-direction: row;
+	position: relative;
+	transition: .4s ease all;
+}
+
+.texto-animado > div.animacion {
+	transform: translateY(-30px);
+}
+
+.texto-animado .segunda-linea {
+	position: absolute;
+	top: 30px;
+}
+
+@media screen and (max-width: 600px){
+	.texto-animado  {
+		position: absolute;
+		display: none;
+	}
+}

@@ -1,12 +1,103 @@
-@import "utilities/variables";
-@import "utilities/mixins";
-@import "utilities/function";
-@import "base/reset";
-@import "layout/header";
-@import "layout/main";
-@import "layout/footer";
+/* VARIABLES GLOBALES */
+
+// Colores
+$colAtencion: #E63946;
+$colFondo: #F1FAEE;
+$colAzulClaro: #A8DADC;
+$colAzulMedio: #457B9D;
+$colAzulOscuro: #1D3557;
+$colNegro: black;
+$colBlanco: white;
+
+//Grises
+$tono: 1;
+
+$colGrisOscuro: rgba(0, 0, 0, $tono*0.8);
+$colGrisMedio: rgba(0, 0, 0, $tono*0.5);
+$colGrisClaro: rgba(0, 0, 0, $tono*0.2);
+
+// Fonts 
+
+$fontBasica: 1rem;
+
+$fontXS: $fontBasica*0.9;
+$fontS: $fontBasica;
+$fontM: $fontBasica*1.5;
+$fontL: $fontBasica*2;
+$fontXL: $fontBasica*2.5;
+
+$weightBasica: 100;
+
+$weightXS: $weightBasica;
+$weightS: $weightBasica*2;
+$weightM: $weightBasica*4;
+$weightL: $weightBasica*6;
+$weightXL: $weightBasica*8;
 
 
-/* media-querry */
-@import "layout/media/media-768";
-@import "layout/media/media-320";
+// Sombras
+$sombra1: 5px 5px 8px 1px rgba(0, 0, 0, 0.1);
+$sombra2: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
+$sombra3: 0px 0px 24px -5px rgba(0,0,0,0.5);
+
+// Imports
+
+//secciones
+@import "proyectoBase";
+@import "footer";
+@import "listadoProyectos";
+@import "header";
+
+//Elementos
+@import "elementos/formulario";
+@import "elementos/barraNavegacion";
+@import "elementos/contenidos";
+@import "elementos/cards";
+@import "elementos/divisor";
+@import "elementos/proyectoChico";
+@import "elementos/boton";
+@import "elementos/imagenYTexto";
+@import "elementos/textoAnimado";
+
+
+/* Valores Generales */
+
+html {
+    scroll-behavior: smooth;
+}
+* {
+    font-family: 'Raleway', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-color: $colFondo; 
+    margin: 0px;
+    padding: 0px;
+}
+h3 {
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    font-size: $fontL;
+    font-weight: $weightM;
+    text-align: center;
+    z-index: 1;
+}
+h4 {
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    font-size: $fontL;
+    font-weight: $weightS;
+    text-align: center;
+    z-index: 1;
+}
+h5 {
+    font-family: 'Poppins', sans-serif; 
+    font-size: $fontM;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
