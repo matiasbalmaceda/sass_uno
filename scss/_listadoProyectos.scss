@@ -2,7 +2,8 @@
     .textoCat p {
         display: none;
     }
-  }
+}
+
 .filtroCategorias {
     color: $colFondo;
     text-align: center;
@@ -13,8 +14,9 @@
     display: flex;
     justify-content: space-between;
     text-align: center;
-    box-shadow:  -10px -10px $colAtencion;
+    box-shadow: -10px -10px $colAtencion;
 }
+
 .textoCat {
     width: 90%;
     display: block;
@@ -22,14 +24,17 @@
     color: white;
     opacity: 0.8;
 }
+
 .textoCat:hover {
     transform: scale(1.02);
     opacity: 1;
     transition: 0.1s ease-in-out;
 }
+
 .filtroCategorias p {
     font-size: $fontS;
 }
+
 .filtroCategorias i {
     font-size: $fontM;
     margin-bottom: 10px;
@@ -39,10 +44,12 @@
     padding: 10px 10px 0px 10px;
     margin: 10px 10px 0px 10px;
 }
+
 .categoriaProyecto p {
     font-size: $fontM;
     font-weight: $weightL;
 }
+
 .categoriaProyecto i {
     color: $colAzulMedio;
 

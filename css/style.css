@@ -178,7 +178,7 @@
     display: grid;
     grid-template-columns: 5fr;
     grid-template-rows: 3rem 3rem 3rem 3rem 3rem 3rem 3rem;
-    grid-template-areas: "lNombre" "iNombre" "lOng " "iOng"   "lEmail" "iEmail" "bSubmit" "bSubmit";
+    grid-template-areas: "lNombre" "iNombre" "lOng " "iOng" "lEmail" "iEmail" "bSubmit" "bSubmit";
     justify-content: center;
     margin: 3rem;
     padding: 1rem; } }
@@ -188,7 +188,7 @@
     display: grid;
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 4rem 4rem 4rem 4rem;
-    grid-template-areas: "lNombre iNombre" "lOng iOng"   "lEmail iEmail" "bSubmit bSubmit";
+    grid-template-areas: "lNombre iNombre" "lOng iOng" "lEmail iEmail" "bSubmit bSubmit";
     margin: 5rem;
     padding: 3rem; } }
 
@@ -434,7 +434,8 @@
     .imagenFondo__subtitulo p {
       width: 80%; }
 
-.quote h3::before, .quote h3::after {
+.quote h3::before,
+.quote h3::after {
   font-family: Georgia, 'Times New Roman', Times, serif;
   position: absolute;
   color: rgba(0, 0, 0, 0.2);

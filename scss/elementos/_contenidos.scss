@@ -2,7 +2,7 @@
     .listado__ong {
         display: none;
     }
-  }
+}
 
 .rectanguloColor {
     height: 16px;
@@ -13,29 +13,34 @@
     width: 40%;
     margin: auto;
 }
+
 .info {
     margin: 2vw 0;
     background-color: $colAzulMedio;
     padding: 2vw 0;
-    box-shadow:  2vw 2vw #E63946;
+    box-shadow: 2vw 2vw #E63946;
+
     &__texto {
         color: $colBlanco;
         letter-spacing: 1px;
-        line-height : 25px;
+        line-height: 25px;
         font-size: $fontS;
         padding: 50px 50px 30px 50px;
     }
+
     .listado {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         color: $colBlanco;
         padding: 1vw 2vw;
+
         &__categoria {
             font-weight: $weightL;
             background-color: $colAtencion;
-            
+
         }
+
         &__ong {
             font-style: italic;
         }

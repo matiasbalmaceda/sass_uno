@@ -18,12 +18,15 @@
         border-color: $colAzulMedio;
         border-width: 1px;
     }
+
     &:hover __nombre {
         color: $colAzulOscuro;
     }
+
     &:hover .proyectoChico__imagen {
         transform: scale(1.01);
     }
+
     &__nombre {
         font-size: $fontS;
         color: $colAzulMedio;
@@ -31,16 +34,18 @@
         text-decoration: none;
         min-height: 4.5rem;
     }
+
     &__imagen {
         padding: 1rem;
     }
 }
 
 @media only screen and (max-width: 600px) {
-   
+
     .proyectoChico__nombre {
         display: none;
     }
+
     .proyectoChico__imagen {
         padding: 0.5rem;
     }

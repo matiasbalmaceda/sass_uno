@@ -2,12 +2,12 @@
     .proyecto__texto {
         display: none;
     }
-  }
+}
 
 .card {
     border: 0px;
     background-color: rgba($color: $colNegro, $alpha: 0);
-    
+
     .proyecto {
         display: flex;
         flex-direction: column;
@@ -21,10 +21,12 @@
             padding: 0px 20px;
             height: 4rem;
         }
+
         &__texto {
             padding: 0px 20px;
             height: 9rem;
         }
+
         &__boton {
             width: 100%;
             background-color: $colAtencion;
@@ -36,17 +38,21 @@
             transition: 0.3s ease-in-out;
             margin-top: 1rem;
         }
+
         &__boton:hover p {
-            transform: scale(1.1);   
+            transform: scale(1.1);
             color: $colNegro;
         }
+
         &__link {
             color: $colBlanco;
         }
+
         &:hover {
             opacity: 1;
             box-shadow: $sombra3;
             transform: scale(1.01);
+
             button {
                 opacity: 1;
             }
